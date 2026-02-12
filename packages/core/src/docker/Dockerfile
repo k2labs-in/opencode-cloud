@@ -528,7 +528,7 @@ USER opencode
 # Clone the fork and build opencode from source (as non-root user)
 # Pin to specific commit for reproducibility
 # Build opencode from source (BuildKit cache mounts disabled for now)
-RUN OPENCODE_COMMIT="fd22d5c5ae9dc49d287dfb454d99791b962be47b" \
+RUN OPENCODE_COMMIT="5df221c3c3fb84cba8d2565ecc4880a9046aa6c4" \
     && rm -rf /tmp/opencode-repo \
     && git clone --depth 1 https://github.com/pRizz/opencode.git /tmp/opencode-repo \
     && cd /tmp/opencode-repo \
